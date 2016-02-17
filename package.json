@@ -1,0 +1,39 @@
+{
+  "name": "eslint-config-nashdot",
+  "version": "0.0.1",
+  "description": "Nashdot's ESLint config",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nashdot/eslint-config-nashdot.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "nashdot",
+    "javascript",
+    "styleguide"
+  ],
+  "author": "Stanislav Lesnikov (https://nashdot.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nashdot/eslint-config-nashdot/issues"
+  },
+  "homepage": "https://github.com/nashdot/eslint-config-nashdot",
+  "devDependencies": {
+    "eslint": "^2.1.0",
+    "eslint-plugin-react": "^3.16.1",
+    "react": "^0.14.7"
+  },
+  "peerDependencies": {
+    "eslint": "^2.1.0",
+    "eslint-plugin-react": "^3.16.1"
+  },
+  "dependencies": {
+    "eslint-config-nashdot": "^1.0.0"
+  }
+}
