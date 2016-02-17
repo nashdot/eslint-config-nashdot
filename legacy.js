@@ -1,5 +1,5 @@
 module.exports = {
-  extends: [
+  'extends': [
     'eslint-config-nashdot/rules/best-practices',
     'eslint-config-nashdot/rules/errors',
     'eslint-config-nashdot/rules/legacy',
@@ -7,11 +7,11 @@ module.exports = {
     'eslint-config-nashdot/rules/style',
     'eslint-config-nashdot/rules/variables'
   ].map(require.resolve),
-  env: {
-    browser: true,
-    node: true
+  'env': {
+    'browser': true,
+    'node': true
   },
-  ecmaFeatures: {},
-  globals: {},
-  rules: {}
+  'ecmaFeatures': {},
+  'globals': {},
+  'rules': {}
 };

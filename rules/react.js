@@ -27,7 +27,7 @@ module.exports = {
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-handler-names.md
     'react/jsx-handler-names': [0, {
       'eventHandlerPrefix': 'handle',
-      'eventHandlerPropPrefix': 'on',
+      'eventHandlerPropPrefix': 'on'
     }],
     // Validate props indentation in JSX
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-indent-props.md
@@ -57,13 +57,13 @@ module.exports = {
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-sort-prop-types.md
     'react/jsx-sort-prop-types': [0, {
       'ignoreCase': false,
-      'callbacksLast': false,
+      'callbacksLast': false
     }],
     // Enforce props alphabetical sorting
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-sort-props.md
     'react/jsx-sort-props': [0, {
       'ignoreCase': false,
-      'callbacksLast': false,
+      'callbacksLast': false
     }],
     // Prevent React to be incorrectly marked as unused
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-uses-react.md
@@ -106,7 +106,7 @@ module.exports = {
     'react/prefer-es6-class': [2, 'always'],
     // Prevent missing props validation in a React component definition
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prop-types.md
-    'react/prop-types': [2, { 'ignore': [], customValidators: [] }],
+    'react/prop-types': [2, { 'ignore': [], 'customValidators': [] }],
     // Prevent missing React when using JSX
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/react-in-jsx-scope.md
     'react/react-in-jsx-scope': 2,
@@ -131,9 +131,9 @@ module.exports = {
     // Prevent missing parentheses around multilines JSX
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/wrap-multilines.md
     'react/wrap-multilines': [2, {
-      declaration: true,
-      assignment: true,
-      return: true
-    }],
+      'declaration': true,
+      'assignment': true,
+      'return': true
+    }]
   }
 };

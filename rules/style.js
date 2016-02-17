@@ -23,6 +23,8 @@ module.exports = {
     // this option enforces minimum and maximum identifier lengths
     // (variable names, property names etc.)
     'id-length': 0,
+    // require identifiers to match the provided regular expression
+    'id-match': 0,
     // this option sets a specific tab width for your code
     // https://github.com/eslint/eslint/blob/master/docs/rules/indent.md
     'indent': [2, 2, { 'SwitchCase': 1, 'VariableDeclarator': 1 }],
@@ -31,6 +33,8 @@ module.exports = {
     'jsx-quotes': [2, 'prefer-double'],
     // enforces spacing between keys and values in object literal properties
     'key-spacing': [2, { 'beforeColon': false, 'afterColon': true }],
+    // require a space before, after or certain keywords
+    'keyword-spacing': [2, { 'before': true, 'after': true, 'overrides': {} }],
     // enforces empty lines around comments
     'lines-around-comment': 0,
     // disallow mixed 'LF' and 'CRLF' as linebreaks
@@ -89,21 +93,15 @@ module.exports = {
     'padded-blocks': [2, 'never'],
     // require quotes around object literal property names
     // http://eslint.org/docs/rules/quote-props.html
-    'quote-props': [2, 'as-needed', { 'keywords': false, 'unnecessary': true, 'numbers': false }],
+    'quote-props': [2, 'always'],
     // specify whether double or single quotes should be used
     'quotes': [2, 'single', 'avoid-escape'],
-    // require identifiers to match the provided regular expression
-    'id-match': 0,
     // enforce spacing before and after semicolons
     'semi-spacing': [2, { 'before': false, 'after': true }],
     // require or disallow use of semicolons instead of ASI
     'semi': [2, 'always'],
     // sort variables within the same declaration block
     'sort-vars': 0,
-    // require a space before certain keywords
-    'space-before-keywords': [2, 'always'],
-    // require a space after certain keywords
-    'space-after-keywords': [2, 'always'],
     // require or disallow space before blocks
     'space-before-blocks': 2,
     // require or disallow space before function opening parenthesis
@@ -113,8 +111,6 @@ module.exports = {
     'space-in-parens': [2, 'never'],
     // require spaces around operators
     'space-infix-ops': 2,
-    // require a space after return, throw, and case
-    'space-return-throw-case': 2,
     // Require or disallow spaces before/after unary operators
     'space-unary-ops': 0,
     // require or disallow a space immediately following the // or /* in a comment
