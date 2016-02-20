@@ -1,23 +1,23 @@
 module.exports = {
-  'rules': {
+  rules: {
     // enforces getter/setter pairs in objects
     'accessor-pairs': 0,
     // treat var statements as if they were block scoped
     'block-scoped-var': 2,
     // specify the maximum cyclomatic complexity allowed in a program
-    'complexity': [0, 11],
+    complexity: [0, 11],
     // require return statements to either always or never specify values
     'consistent-return': 2,
     // specify curly brace conventions for all control statements
-    'curly': [2, 'multi-line'],
+    curly: [2, 'multi-line'],
     // require default case in switch statements
     'default-case': 2,
     // encourages use of dot notation whenever possible
-    'dot-notation': [2, { 'allowKeywords': true }],
+    'dot-notation': [2, { allowKeywords: true }],
     // enforces consistent newlines before or after dots
     'dot-location': 0,
     // require the use of === and !==
-    'eqeqeq': 2,
+    eqeqeq: 2,
     // make sure for-in loops have an if statement
     'guard-for-in': 2,
     // disallow the use of alert, confirm, and prompt
@@ -77,7 +77,7 @@ module.exports = {
     // disallow reassignment of function parameters
     // disallow parameter object manipulation
     // rule: http://eslint.org/docs/rules/no-param-reassign.html
-    'no-param-reassign': [2, { 'props': true }],
+    'no-param-reassign': [2, { props: true }],
     // disallow use of process.env
     'no-process-env': 0,
     // disallow usage of __proto__ property
@@ -101,17 +101,17 @@ module.exports = {
     // disallow use of void operator
     'no-void': 0,
     // disallow usage of configurable warning terms in comments: e.g. todo
-    'no-warning-comments': [0, { 'terms': ['todo', 'fixme', 'xxx'], 'location': 'start' }],
+    'no-warning-comments': [0, { terms: ['todo', 'fixme', 'xxx'], location: 'start' }],
     // disallow use of the with statement
     'no-with': 2,
     // require use of the second argument for parseInt()
-    'radix': 2,
+    radix: 2,
     // requires to declare all vars on top of their containing scope
     'vars-on-top': 2,
     // require immediate function invocation to be wrapped in parentheses
     // http://eslint.org/docs/rules/wrap-iife.html
     'wrap-iife': [2, 'outside'],
     // require or disallow Yoda conditions
-    'yoda': 2
+    yoda: 2
   }
 };

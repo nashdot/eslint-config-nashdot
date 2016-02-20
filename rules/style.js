@@ -41,9 +41,9 @@ module.exports = {
     'linebreak-style': 0,
     // specify the maximum length of a line in your program
     // https://github.com/eslint/eslint/blob/master/docs/rules/max-len.md
-    'max-len': [2, 100, 2, {
+    'max-len': [2, 140, 2, {
       'ignoreUrls': true,
-      'ignoreComments': false
+      'ignoreComments': true
     }],
     // specify the maximum depth callbacks can be nested
     'max-nested-callbacks': 0,
@@ -93,7 +93,7 @@ module.exports = {
     'padded-blocks': [2, 'never'],
     // require quotes around object literal property names
     // http://eslint.org/docs/rules/quote-props.html
-    'quote-props': [2, 'always'],
+    'quote-props': [2, 'as-needed', { 'keywords': false, 'unnecessary': true, 'numbers': false }],
     // specify whether double or single quotes should be used
     'quotes': [2, 'single', 'avoid-escape'],
     // enforce spacing before and after semicolons

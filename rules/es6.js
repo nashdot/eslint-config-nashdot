@@ -1,27 +1,27 @@
 module.exports = {
-  'env': {
-    'es6': false
+  env: {
+    es6: false
   },
-  'ecmaFeatures': {
-    'arrowFunctions': true,
-    'blockBindings': true,
-    'classes': true,
-    'defaultParams': true,
-    'destructuring': true,
-    'forOf': true,
-    'generators': false,
-    'modules': true,
-    'objectLiteralComputedProperties': true,
-    'objectLiteralDuplicateProperties': false,
-    'objectLiteralShorthandMethods': true,
-    'objectLiteralShorthandProperties': true,
-    'restParams': true,
-    'spread': true,
-    'superInFunctions': true,
-    'templateStrings': true,
-    'jsx': true
+  ecmaFeatures: {
+    arrowFunctions: true,
+    blockBindings: true,
+    classes: true,
+    defaultParams: true,
+    destructuring: true,
+    forOf: true,
+    generators: false,
+    modules: true,
+    objectLiteralComputedProperties: true,
+    objectLiteralDuplicateProperties: false,
+    objectLiteralShorthandMethods: true,
+    objectLiteralShorthandProperties: true,
+    restParams: true,
+    spread: true,
+    superInFunctions: true,
+    templateStrings: true,
+    jsx: true
   },
-  'rules': {
+  rules: {
     // enforces no braces where they can be omitted
     // http://eslint.org/docs/rules/arrow-body-style
     'arrow-body-style': [2, 'as-needed'],
@@ -29,7 +29,7 @@ module.exports = {
     'arrow-parens': 0,
     // require space before/after arrow function's arrow
     // https://github.com/eslint/eslint/blob/master/docs/rules/arrow-spacing.md
-    'arrow-spacing': [2, { 'before': true, 'after': true }],
+    'arrow-spacing': [2, { before: true, after: true }],
     // verify super() callings in constructors
     'constructor-super': 0,
     // enforce the spacing around the * in generator functions
