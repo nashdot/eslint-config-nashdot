@@ -1,7 +1,8 @@
-1.0.2 / 2016-02-20
+1.0.2-3 / 2016-02-20
 ==================
 - 'max-len': 140 chars
 - 'quote-props': as-needed
+- Update eslint-plugin-react to 4.0.0
 
 1.0.1 / 2016-02-17
 ==================
