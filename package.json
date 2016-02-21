@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-nashdot",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Nashdot's ESLint config",
   "main": "index.js",
   "scripts": {
