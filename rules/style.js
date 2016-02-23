@@ -23,8 +23,6 @@ module.exports = {
     // this option enforces minimum and maximum identifier lengths
     // (variable names, property names etc.)
     'id-length': 0,
-    // require identifiers to match the provided regular expression
-    'id-match': 0,
     // this option sets a specific tab width for your code
     // https://github.com/eslint/eslint/blob/master/docs/rules/indent.md
     indent: [2, 2, { SwitchCase: 1, VariableDeclarator: 1 }],
@@ -34,7 +32,11 @@ module.exports = {
     // enforces spacing between keys and values in object literal properties
     'key-spacing': [2, { beforeColon: false, afterColon: true }],
     // require a space before, after or certain keywords
-    'keyword-spacing': [2, { before: true, after: true, overrides: {} }],
+    'keyword-spacing': [2, {
+      before: true,
+      after: true,
+      overrides: {}
+    }],
     // enforces empty lines around comments
     'lines-around-comment': 0,
     // disallow mixed 'LF' and 'CRLF' as linebreaks
@@ -53,6 +55,10 @@ module.exports = {
     'new-parens': 0,
     // allow/disallow an empty newline after var statement
     'newline-after-var': 0,
+    // enforces new line after each method call in the chain to make it
+    // more readable and easy to maintain
+    // http://eslint.org/docs/rules/newline-per-chained-call
+    'newline-per-chained-call': [0, { ignoreChainWithDepth: 3 }],
     // disallow use of the Array constructor
     'no-array-constructor': 0,
     // disallow use of the continue statement
@@ -81,10 +87,16 @@ module.exports = {
     // also, prefer `a || b` over `a ? a : b`
     // http://eslint.org/docs/rules/no-unneeded-ternary
     'no-unneeded-ternary': [2, { defaultAssignment: false }],
+    // disallow whitespace before properties
+    // http://eslint.org/docs/rules/no-whitespace-before-property
+    'no-whitespace-before-property': 2,
     // require padding inside curly braces
     'object-curly-spacing': [2, 'always'],
     // allow just one var statement per function
     'one-var': [2, 'never'],
+    // require a newline around variable declaration
+    // http://eslint.org/docs/rules/one-var-declaration-per-line
+    'one-var-declaration-per-line': [2, 'always'],
     // require assignment operator shorthand where possible or prohibit it entirely
     'operator-assignment': 0,
     // enforce operators to be placed before or after line breaks
@@ -96,6 +108,8 @@ module.exports = {
     'quote-props': [2, 'as-needed', { keywords: false, unnecessary: true, numbers: false }],
     // specify whether double or single quotes should be used
     quotes: [2, 'single', 'avoid-escape'],
+    // require identifiers to match the provided regular expression
+    'id-match': 0,
     // enforce spacing before and after semicolons
     'semi-spacing': [2, { before: false, after: true }],
     // require or disallow use of semicolons instead of ASI

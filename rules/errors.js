@@ -1,7 +1,5 @@
 module.exports = {
   rules: {
-    // disallow trailing commas in object literals
-    'comma-dangle': [2, 'never'],
     // disallow assignment in conditional expressions
     'no-cond-assign': [2, 'always'],
     // disallow use of console
